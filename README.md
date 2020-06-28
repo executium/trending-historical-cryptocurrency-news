@@ -197,13 +197,16 @@ None
 
 **Successful Response Payload:**
 ```javascript
- "data": {
-      "keywords_monitored": 5231,
-      "total_articles_found": 534,
-      "total_keywords_matched": "386",
-      "sources": 148,
-      "last_update": 1593344310
-    },
+
+   "data":
+   {
+      "keywords_monitored":5233,
+      "total_articles_found":6756,
+      "total_keywords_matched":"6113",
+      "sources":741,
+      "last_update":1593348146
+   },
+
 ```
 
 ## Contributing
