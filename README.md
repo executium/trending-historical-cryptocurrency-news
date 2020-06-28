@@ -6,7 +6,7 @@
 - [Introduction](#introduction)
 - [Authentication](#authentication)
 - [Base URL](#base-url)
-- [Accessibility](#accessibility)
+- [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - Public
 	- [Trending News Data](#trending-news-data) (public/trending-news-data)
@@ -46,6 +46,16 @@ You do not need to `authenticate` with any API credentials, but `ratelimits` do 
 
 ## Base URL
 The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
+
+## General Information
+* The API is available to the public, rate limits and fair use rules apply.
+* The base endpoint is: **`trendingnews.executium.com`**
+* All endpoints return a JSON object.
+* There are currently **`4 endpoints`** for crytocurrency trending news.
+* For `POST` endpoints, the parameters must be sent as a `query string` or in the `request body`.
+* For `GET` endpoints, parameters must be sent as a `query string`.
+* Parameters may be sent in any order.
+* If a parameter sent in both the `query string` and `request body`, the `query string` parameter will take priority.
 
 ## HTTP Return Codes
 
