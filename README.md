@@ -1,5 +1,7 @@
 # Trending Cryptocurrency News API
 ![Trending News](https://i.imgur.com/0SEx35O.jpg)
+
+## Enrichen and enlighten your Algorithms, AI or websites with supplement historical data.
 All of the latest cryptocurrency news which is trending today with access to historical data. The API concentrates on providing the following attributes:
 
 - Title
