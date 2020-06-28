@@ -2,8 +2,8 @@
 
 /*
 
-	File: request-trending-news.php
-	Endpoint: public/trending-news-data
+	File: trending-news-watchlist.php
+	Endpoint: public/trending-news-watchlist
 	Repo: https://github.com/executium/trending-historical-cryptocurrency-news
 	License: https://github.com/executium/trending-historical-cryptocurrency-news/LICENSE
 
@@ -15,20 +15,12 @@ include '../src/Executium.trendingnews.Class.php';
 # Declare your key and secret
 $obj = new ExecutiumTrendingNews();
 
-# Date Offset
-$timestamp=time();
-$offset=86400;
-$date=date("Y-m-d",$timestamp-$offset);
-
 # Parameters required
 $payload=array();
-$payload['date']=$date;
-$payload['keyword_contains']='';
-$payload['title_contains']='';
-$payload['brief_contains']='';
+$payload['keyword_contains']='bitcoin';
 
 # Send Request
-$result = $obj->trending_news_data($payload);
+$result = $obj->trending_news_watchlist($payload);
 
 # Result
 echo '<pre>';
@@ -39,3 +31,4 @@ echo '<pre>';
 echo '</pre>';
 
 ?>
+
