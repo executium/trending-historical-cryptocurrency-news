@@ -71,6 +71,28 @@ keyword_contains |  | NO |  | Search for a particular keyword in the `keyword`
 title_contains |  | NO |  | Search for a particular keyword in the `title`
 brief_contains |  | NO |  | Search for a particular keyword in the `brief`
 
+```php
+
+
+    
+[data] => Array
+(
+    [0] => Array
+	(
+		[id] => 3564
+		[time_published] => 1593294671
+		[title] => Bitcoin Price Bounce at $8.8K Support Shows Traders Keep Buying the Dip
+		[keyword] => bitcoin
+		[brief] => Bitcoin price dropped below $9000 for the second time this week but traders continue to buy on each dip.
+		[url] => https://cointelegraph.com/news/bitcoin-price-bounce-at-88k-support-shows-traders-keep-buying-the-dip
+		[source] => Cointelegraph
+		[image] => https://s3.cointelegraph.com/storage/uploads/view/a8627213f3baf565b1a1cdb4329867f2.jpg
+		[domain] => cointelegraph.com
+		[author] => Ray Salmond
+	)
+)
+			
+```
 
 ## Trending News Watchlist
 This endpoint provides you will the full list of keywords which our trending news topic tracker looks against. 
