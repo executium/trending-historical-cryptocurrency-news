@@ -5,6 +5,7 @@
 
 - [Introduction](#introduction)
 - [Authentication](#authentication)
+- [Base URL](#base-url)
 - [Accessibility](#accessibility)
 - [HTTP Return Codes](#http-return-codes)
 - Public
@@ -42,6 +43,9 @@ You can jump through historical news by using the `date` parameter on the `publi
 
 ## Authentication
 You do not need to `authenticate` with any API credentials, but `ratelimits` do apply.
+
+## Base URL
+The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
 
 ## HTTP Return Codes
 
