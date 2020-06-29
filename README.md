@@ -4,6 +4,7 @@
 **Table of Contents**
 
 - [Introduction](#introduction)
+- [Online Demo](#online-demo)
 - [Authentication](#authentication)
 - [Base URL](#base-url)
 - [General Information](#general-information)
@@ -48,6 +49,8 @@ All of the latest cryptocurrency news which is trending today with access to his
 	- Confident
 	- Tentative
 
+**JSON Payload Example for a successful trending news data request:**
+
 ```javacript
 
 {
@@ -86,6 +89,15 @@ The endpoint `public/trending-news-watchlist` provides the keywords which we cur
 
 #### Historical News Scrolling
 You can jump through historical news by using the `date` parameter on the `public/trending-news-data`.
+
+## Online Demo
+We have setup a [demo site](https://trendingnews.executium.com/examples/) at [http://trendingnews.executium.com/examples/](http://trendingnews.executium.com/examples/) for you to test out the potential of the cryptocurrency trending and historical news API without having to get your hands dirty.
+
+**PHP API Example Scripts**
+If you [navigate to here](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/examples) you will find a growing list of examples of how you can access the API with only a small amount of PHP knowledge. Too note, some `endpoints` require `POST` parameters to be present, while endpoints such as the proceeding can be accessed without.
+
+- [https://trendingnews.executium.com/api/v2/public/trending-news-sources](https://trendingnews.executium.com/api/v2/public/trending-news-sources)
+- [https://trendingnews.executium.com/api/v2/public/trending-news-statistics](https://trendingnews.executium.com/api/v2/public/trending-news-statistics)
 
 ## Authentication
 You do not need to `authenticate` with any API credentials, but `ratelimits` do apply.
