@@ -13,6 +13,7 @@
 	- [Trending News Data](#trending-news-data) (public/trending-news-data)
 	- [Trending News Watchlist](#trending-news-watchlist) (public/trending-news-watchlist)
 	- [Trending News Sources](#trending-news-sources) (public/trending-news-sources)
+	- [Trending News Source Impact](#trending-news-source-impact) (public/trending-news-source-impact)
 	- [Trending News Statistics](#trending-news-statistics) (public/trending-news-statistics)
 - [Contributing](#contributing)
 
@@ -23,7 +24,7 @@ All of the latest cryptocurrency news which is trending today with access to his
 
 - ID
 - Title
-- Time Created
+- Date Array
 - Brief
 - Source
 - Domain
@@ -33,6 +34,34 @@ All of the latest cryptocurrency news which is trending today with access to his
 - Unique ID
 - Image 
 - Author
+- Price Impact
+
+```javacript
+
+{
+	"id": "3694",
+	"date": 
+	{
+	  "time_published": "1590754014",
+	  "day": "Friday",
+	  "format1": "2020-05-29",
+	  "format2": "29th May 2020 12:06"
+	},
+	"title": "Ethereum Significantly Less Private Than Bitcoin, New Research Shows",
+	"brief": "Ethereum transactions are even easier to de-anonymize than Bitcoin due to its specifics, but a lot of it comes down to careful usage of mixing tools.",
+	"keywords": "bitcoin,Ethereum,eth",
+	"url": "https://cointelegraph.com/news/ethereum-significantly-less-private-than-bitcoin-new-research-shows",
+	"source": "Cointelegraph",
+	"image": "https://s3.cointelegraph.com/storage/uploads/view/c5451bc1be38fbdf6de6f025c637f43d.jpg",
+	"domain": "cointelegraph.com",
+	"author": "Andrey Shevchenko",
+        "price_impact": {
+          "status": "Still processing.",
+          "data": []
+        }	
+}	
+
+```
 
 While we provide the related `image` parameter, you *should* always seek permission from the appropriate *copyright* holder for use and publication of any of the data supplied.
 
@@ -52,7 +81,7 @@ The base URL for using the executium `trending-historical-cryptocurrency-news` i
 * The API is available to the public, rate limits and fair use rules apply.
 * The base endpoint is: **`trendingnews.executium.com`**
 * All endpoints return a JSON object.
-* There are currently **`4 endpoints`** for crytocurrency trending news.
+* There are currently **`5 endpoints`** for crytocurrency trending news.
 * For `POST` endpoints, the parameters must be sent as a `query string` or in the `request body`.
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * Parameters may be sent in any order.
@@ -98,27 +127,76 @@ keyword_contains |  | NO |  | Search for a particular keyword in the `keyword`
 title_contains |  | NO |  | Search for a particular keyword in the `title`
 brief_contains |  | NO |  | Search for a particular keyword in the `brief`
 
-```php
+```javascript
 
+"data": [
+      {
+        "id": "3694",
+        "date": {
+          "time_published": "1590754014",
+          "day": "Friday",
+          "format1": "2020-05-29",
+          "format2": "29th May 2020 12:06"
+        },
+        "title": "Ethereum Significantly Less Private Than Bitcoin, New Research Shows",
+        "brief": "Ethereum transactions are even easier to de-anonymize than Bitcoin due to its specifics, but a lot of it comes down to careful usage of mixing tools.",
+        "keywords": "bitcoin,Ethereum,eth",
+        "url": "https://cointelegraph.com/news/ethereum-significantly-less-private-than-bitcoin-new-research-shows",
+        "source": "Cointelegraph",
+        "image": "https://s3.cointelegraph.com/storage/uploads/view/c5451bc1be38fbdf6de6f025c637f43d.jpg",
+        "domain": "cointelegraph.com",
+        "author": "Andrey Shevchenko",
+        "price_impact": {
+          "status": "3 pending",
+          "data": {
+            "btcusdt": {
+              "status": "compiled",
+              "pair": "BTCUSDT",
+              "before": "9382.55000000",
+              "after": "9415.99000000",
+              "difference": "33.44000000"
+            },
+            "ethusdt": {
+              "status": "compiled",
+              "pair": "ETHUSDT",
+              "before": "218.47000000",
+              "after": "219.82000000",
+              "difference": "1.35000000"
+            },
+            "adausdt": {
+              "status": "compiled",
+              "pair": "ADAUSDT",
+              "before": "0.06299000",
+              "after": "0.06387000",
+              "difference": "0.00088000"
+            },
+            "xrpusdt": {
+              "status": "compiled",
+              "pair": "XRPUSDT",
+              "before": "0.19750000",
+              "after": "0.19758000",
+              "difference": "0.00008000"
+            },
+            "ethbtc": {
+              "status": "pending",
+              "pair": "ETHBTC"
+            },
+            "adabtc": {
+              "status": "pending",
+              "pair": "ADABTC"
+            },
+            "xrpbtc": {
+              "status": "pending",
+              "pair": "XRPBTC"
+            }
+          }
+        }
+      },
+      
+      ...
+      ...
+]
 
-    
-[data] => Array
-(
-    [0] => Array
-	(
-		[id] => 3564
-		[time_published] => 1593294671
-		[title] => Bitcoin Price Bounce at $8.8K Support Shows Traders Keep Buying the Dip
-		[keyword] => bitcoin
-		[brief] => Bitcoin price dropped below $9000 for the second time this week but traders continue to buy on each dip.
-		[url] => https://cointelegraph.com/news/bitcoin-price-bounce-at-88k-support-shows-traders-keep-buying-the-dip
-		[source] => Cointelegraph
-		[image] => https://s3.cointelegraph.com/storage/uploads/view/a8627213f3baf565b1a1cdb4329867f2.jpg
-		[domain] => cointelegraph.com
-		[author] => Ray Salmond
-	)
-)
-			
 ```
 
 ## Trending News Watchlist
@@ -200,7 +278,132 @@ None
       "AMEinfo",
 }
 ```
+## Trending News Source Impact
+A complete compiled list to provide insight into news sources impact on prices. You can filter the `source` by using `source_contains`, which will allow you to concentrate on specific sources you want. The `top_ranking_*` array contains the all time list of articles that we have stored and their individual impact.  The `most_recent_*` array provides the most reason `bull` and `bear` articles from the publication.
+	
+It is important to note, that while some publications seem to have a big impact on price, we are not indicating that they we`re the sole reason for the movement. The intention of this endpoint is to provide additional context to whether the press directly impacts prices or if it is just a fluke.
 
+
+```
+POST /api/v2/public/trending-news-source-impact
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+source_contains |  | NO |  | Search for a particular keyword in the `source`
+
+
+**Successful Response Payload:**
+```javascript
+
+
+"data":
+{
+	"btcusdt":
+	{
+		"Cryptonaute":
+		{
+            "total_articles":410,
+            "sum_impact":"590.12000000",
+            "top_ranking_bull":[
+               {
+                  "id":"3836",
+                  "keywords":"bitcoin,Ethereum,eth",
+                  "time_published":"1587020400",
+                  "diff_btcusdt":"233.50000000",
+                  "ago":"11 weeks ago"
+               },
+               {
+                  "id":"4011",
+                  "keywords":"bitcoin",
+                  "time_published":"1592204400",
+                  "diff_btcusdt":"90.70000000",
+                  "ago":"2 weeks ago"
+               },
+               {
+                  "id":"3831",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1589439600",
+                  "diff_btcusdt":"63.54000000",
+                  "ago":"7 weeks ago"
+               },
+               {
+                  "id":"3777",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1592377200",
+                  "diff_btcusdt":"37.10000000",
+                  "ago":"2 weeks ago"
+               },
+               {
+                  "id":"3839",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1589204706",
+                  "diff_btcusdt":"34.54000000",
+                  "ago":"7 weeks ago"
+               }
+            ],
+            "top_ranking_bear":[
+               {
+                  "id":"3810",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1589918155",
+                  "impact":"-16.50000000",
+                  "ago":"6 weeks ago"
+               }
+            ],
+            "most_recent_bull":[
+               {
+                  "id":"4001",
+                  "keywords":"bitcoin",
+                  "time_published":"1593172260",
+                  "diff_btcusdt":"26.14000000",
+                  "ago":"3 days ago"
+               },
+               {
+                  "id":"3768",
+                  "keywords":"bitcoin,Ethereum,eth",
+                  "time_published":"1592910300",
+                  "diff_btcusdt":"31.23000000",
+                  "ago":"6 days ago"
+               },
+               {
+                  "id":"3773",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1592812980",
+                  "diff_btcusdt":"10.43000000",
+                  "ago":"1 weeks ago"
+               },
+               {
+                  "id":"3792",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1592496660",
+                  "diff_btcusdt":"2.76000000",
+                  "ago":"2 weeks ago"
+               },
+               {
+                  "id":"3777",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1592377200",
+                  "diff_btcusdt":"37.10000000",
+                  "ago":"2 weeks ago"
+               }
+            ],
+            "most_recent_bear":[
+               {
+                  "id":"3810",
+                  "keywords":"Ethereum,eth",
+                  "time_published":"1589918155",
+                  "impact":"-16.50000000",
+                  "ago":"6 weeks ago"
+               }
+            ]
+         },
+     },
+ }
+         	
+	
+```
 
 ## Trending News Statistics
 Statistics relating to the trending news catalog. The parameter `total_keywords_matched` can be much higher than total_articles_found as 100s of keywords can be matched to a single article.
