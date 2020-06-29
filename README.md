@@ -70,7 +70,11 @@ All of the latest cryptocurrency news which is trending today with access to his
         "price_impact": {
           "status": "Still processing.",
           "data": []
-        }	
+        ,
+	"tone": {
+          "status": "Subscription required.",
+          "data": []
+        }
 }	
 
 ```
