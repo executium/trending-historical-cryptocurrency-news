@@ -15,6 +15,7 @@
 	- [Trending News Sources](#trending-news-sources) (public/trending-news-sources)
 	- [Trending News Source Impact](#trending-news-source-impact) (public/trending-news-source-impact)
 	- [Trending News Statistics](#trending-news-statistics) (public/trending-news-statistics)
+- [Requesting Keywords](#requesting-keywords)
 - [Contributing](#contributing)
 
 ## Introduction
