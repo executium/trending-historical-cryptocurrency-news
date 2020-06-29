@@ -15,6 +15,9 @@
 	- [Trending News Sources](#trending-news-sources) (public/trending-news-sources)
 	- [Trending News Source Impact](#trending-news-source-impact) (public/trending-news-source-impact)
 	- [Trending News Statistics](#trending-news-statistics) (public/trending-news-statistics)
+	- [Trending News Add Keyword](#trending-news-add-keyword) (public/trending-news-add-keyword)
+	- [List your own keywords](#list-your-own-keywords) (public/trending-news-list-my-keywords)
+	- [Trending News Remove Keyword](#trending-news-remove-keyword) (public/trending-news-remove-keyword)
 - [Requesting Keywords](#requesting-keywords)
 - [Contributing](#contributing)
 
@@ -82,7 +85,7 @@ The base URL for using the executium `trending-historical-cryptocurrency-news` i
 * The API is available to the public, rate limits and fair use rules apply.
 * The base endpoint is: **`trendingnews.executium.com`**
 * All endpoints return a JSON object.
-* There are currently **`5 endpoints`** for crytocurrency trending news.
+* There are currently **`8 endpoints`** for crytocurrency trending news.
 * For `POST` endpoints, the parameters must be sent as a `query string` or in the `request body`.
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * Parameters may be sent in any order.
@@ -445,6 +448,73 @@ None
       "last_update": 1593408099
 	}
 
+```
+
+
+## Trending News Add Keyword
+
+
+```
+POST /api/v2/public/trending-news-add-keyword
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+name | 1 | YES |  | The `keyword` you want to track.
+
+
+**Successful Response Payload:**
+```javascript
+"data": {
+      "code": 2001,
+      "error": "Missing Key"
+    },
+```
+
+
+## List your own keywords
+
+
+```
+POST /api/v2/public/trending-news-list-my-keywords
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+limit |  | NO | 10 | 
+page |  | NO | 1 | 
+
+
+**Successful Response Payload:**
+```javascript
+"data": {
+      "code": 2001,
+      "error": "Missing Key"
+    },
+```
+
+
+## Trending News Remove Keyword
+
+
+```
+POST /api/v2/public/trending-news-remove-keyword
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+keywordid |  | YES |  | The `keyword_id` you wish to remove. You can get this information from the `public/trending-news-list-my-keywords` endpoint.
+
+
+**Successful Response Payload:**
+```javascript
+"data": {
+      "code": 2001,
+      "error": "Missing Key"
+    },
 ```
 
 ## Requesting Keywords
