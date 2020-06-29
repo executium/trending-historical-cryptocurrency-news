@@ -25,7 +25,7 @@
 ## Introduction
 
 #### Enrichen and enlighten your Algorithms, AI or websites with supplement historical data.
-All of the latest cryptocurrency news which is trending today with access to historical data. The API concentrates on providing the following attributes:
+All of the latest cryptocurrency and related crypto news which is trending today with access to historical data. The API concentrates on providing the following attributes:
 
 - ID
 - Title
@@ -114,6 +114,7 @@ The base URL for using the executium `trending-historical-cryptocurrency-news` i
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * Parameters may be sent in any order.
 * If a parameter sent in both the `query string` and `request body`, the `query string` parameter will take priority.
+* This package is part of the [core executium API version 2](https://github.com/executium/api-version-2).
 
 ## HTTP Return Codes
 
