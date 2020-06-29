@@ -71,7 +71,7 @@ Within each article you will find the array `price_impact`. This array provides 
 
 - A aggregated price capture 300 seconds before an article was published
 - A aggregated price capture 3600 seconds after the article was published
-- A difference of before minus after (before-after)
+- A difference of after minus before (after-before)
 
 Currently we capture the following pairs:
 
