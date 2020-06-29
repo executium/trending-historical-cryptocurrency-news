@@ -39,6 +39,14 @@ All of the latest cryptocurrency news which is trending today with access to his
 - Image 
 - Author
 - Price Impact
+- Tone
+	- Anger
+	- Fear
+	- Joy
+	- Sadness
+	- Analytical
+	- Confident
+	- Tentative
 
 ```javacript
 
