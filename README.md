@@ -8,6 +8,7 @@
 - [Base URL](#base-url)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
+- [Article Price Impact](#article-price-impact)
 - Public
 	- [Trending News Data](#trending-news-data) (public/trending-news-data)
 	- [Trending News Watchlist](#trending-news-watchlist) (public/trending-news-watchlist)
@@ -65,6 +66,22 @@ The base URL for using the executium `trending-historical-cryptocurrency-news` i
 * HTTP `418` return code is used when an IP has been banned automatically for continuing to send requests after receiving `429` codes.
 * HTTP `5XX` return codes are used for internal errors where the issue is with the executium side.
 
+## Article Price Impact
+Within each article you will find the array `price_impact`. This array provides the following data points:
+
+- A aggregated price capture 300 seconds before an article was published
+- A aggregated price capture 3600 seconds after the article was published
+- A difference of before minus after (before-after)
+
+Currently we capture the following pairs:
+
+- BTCUSDT
+- ETHUSDT
+- ADAUSDT
+- XRPUSDT
+- ETHBTC
+- ADABTC
+- XRPBTC
 
 ## Trending News Data
 Trending news data is display on a day per day basis. The date format must be YYYY-MM-DD. You have the additional option to utilize `keyword_contains` which will enable you to pull back all data on keywords which contain your string. This ability is also extended with `title_contains` and `brief_contains`. For multiple keywords to search add a coma (,) onto the string and the system will search for multiple, up to a maximum of 10 per contains.
