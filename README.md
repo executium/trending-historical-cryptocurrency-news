@@ -418,14 +418,31 @@ None
 **Successful Response Payload:**
 ```javascript
 
-   "data":
-   {
-      "keywords_monitored":5233,
-      "total_articles_found":6756,
-      "total_keywords_matched":"6113",
-      "sources":741,
-      "last_update":1593348146
-   },
+ "data": 
+ {
+      "keywords_monitored": 5235,
+      "total_articles_found": 13100,
+      "total_keywords_matched": 11372,
+      "history": [
+        {
+          "added_in_last_hour": 570
+        },
+        {
+          "last_24_hours": 454
+        },
+        {
+          "last_48_hours": 725
+        },
+        {
+          "last_7_days": 2265
+        },
+        {
+          "last_30_days": 4927
+        }
+      ],
+      "sources": 1406,
+      "last_update": 1593408099
+	}
 
 ```
 
