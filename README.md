@@ -112,7 +112,7 @@ The base URL for using the executium `trending-historical-cryptocurrency-news` i
 * HTTP `5XX` return codes are used for internal errors where the issue is with the executium side.
 
 ## Article Price Impact
-Within each article you will find the array `price_impact`. This array provides the following data points:
+Within each article you will find the array `price_impact`. This array provides the following data points for public usage:
 
 - A aggregated price capture 300 seconds before an article was published
 - A aggregated price capture 3600 seconds after the article was published
@@ -127,6 +127,21 @@ Currently we capture the following pairs:
 - ETHBTC
 - ADABTC
 - XRPBTC
+
+There are addition tiers of `price_impact` for different `before` and `after` price captures. 
+
+Time Period | Before | After | Subscription
+------------ | ------------ | ------------ | ------------
+2 Minutes | 30s | 120s | YES
+5 Minutes | 60s | 300s | YES
+10 Minutes | 90s | 600s | YES
+15 Minutes | 90s | 900s | YES
+20 Minutes | 90s | 1200s | YES
+30 Minutes | 90s | 1800s | YES
+60 Minutes | 300s | 3600s | NO
+
+#### Common question: How do you capture a price before it's even published?
+We use the provided endpoints with exchanges to find an aggregated price for the time period before the piece was published. 
 
 ## Trending News Data
 Trending news data is display on a day per day basis. The date format must be YYYY-MM-DD. You have the additional option to utilize `keyword_contains` which will enable you to pull back all data on keywords which contain your string. This ability is also extended with `title_contains` and `brief_contains`. For multiple keywords to search add a coma (,) onto the string and the system will search for multiple, up to a maximum of 10 per contains.
@@ -162,7 +177,7 @@ brief_contains |  | NO |  | Search for a particular keyword in the `brief`
         "image": "https://s3.cointelegraph.com/storage/uploads/view/c5451bc1be38fbdf6de6f025c637f43d.jpg",
         "domain": "cointelegraph.com",
         "author": "Andrey Shevchenko",
-        "price_impact": {
+        "price_impact_3600s": {
           "status": "3 pending",
           "data": {
             "btcusdt": {
