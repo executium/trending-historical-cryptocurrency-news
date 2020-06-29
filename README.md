@@ -230,3 +230,6 @@ None
 
 #### Requesting additional keywords to track
 If you wish to have more keywords added to the watchlist then please email support@executium.com
+
+#### Beyond cryptocurrency
+In the search for additional market data and intelligence we have such keywords on the watchlist as `gold` and `oil`.
