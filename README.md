@@ -67,7 +67,7 @@ All of the latest cryptocurrency news which is trending today with access to his
 	"image": "https://s3.cointelegraph.com/storage/uploads/view/c5451bc1be38fbdf6de6f025c637f43d.jpg",
 	"domain": "cointelegraph.com",
 	"author": "Andrey Shevchenko",
-        "price_impact": {
+	"price_impact_3600s": {
           "status": "Still processing.",
           "data": []
         ,
@@ -177,7 +177,32 @@ brief_contains |  | NO |  | Search for a particular keyword in the `brief`
         "image": "https://s3.cointelegraph.com/storage/uploads/view/c5451bc1be38fbdf6de6f025c637f43d.jpg",
         "domain": "cointelegraph.com",
         "author": "Andrey Shevchenko",
-        "price_impact_3600s": {
+        
+        "price_impact_120s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+        "price_impact_300s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+        "price_impact_600s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+        "price_impact_900s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+        "price_impact_1200s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+        "price_impact_1800s": {
+          "status": "Subscription required.",
+          "data": []
+        },
+	"price_impact_3600s": {
           "status": "3 pending",
           "data": {
             "btcusdt": {
