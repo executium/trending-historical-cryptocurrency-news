@@ -161,6 +161,9 @@ Time Period | Before | After | Subscription
 #### Common question: How do you capture a price before it's even published?
 We use the provided endpoints with exchanges to find an aggregated price for the time period before the piece was published. 
 
+#### Common question: Is this data useful?
+The data provided is in a format which provides *enough* depth in the `non-subscription` model for a user to be able to manipulate results how they see fit. We do not know, nor make any suggestion that it is useful for whichever method. But, if it can provide you the ability to analyze data, and discount it or count it, then that should prove of some benefit to your organization. Within executium, certain publications can be coupled with `tone` and `timing` to trigger `buy` or `sell` on strategies.
+
 ## Trending News Data
 Trending news data is display on a day per day basis. The date format must be YYYY-MM-DD. You have the additional option to utilize `keyword_contains` which will enable you to pull back all data on keywords which contain your string. This ability is also extended with `title_contains` and `brief_contains`. For multiple keywords to search add a coma (,) onto the string and the system will search for multiple, up to a maximum of 10 per contains.
 
