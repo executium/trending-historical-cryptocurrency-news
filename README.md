@@ -96,7 +96,7 @@ We have setup a [demo site](https://trendingnews.executium.com/examples/) at [ht
 
 The example concentrates on the `price_impact_3600s` array. It compiles data for all offered pairs on a date range basis.
 
-![Trending News Demo](https://i.imgur.com/1MljFfS.png)
+![Trending News Demo](https://i.imgur.com/YoaXnQ9.png)
 
 **PHP API Example Scripts**
 If you [navigate to here](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/examples) you will find a growing list of examples of how you can access the API with only a small amount of PHP knowledge. Too note, some `endpoints` require `POST` parameters to be present, while endpoints such as the proceeding can be accessed without.
