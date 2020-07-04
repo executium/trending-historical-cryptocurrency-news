@@ -9,15 +9,13 @@ func main() {
 	obj := src.New(key, secret)
   
 /*
-  # Interchange the endpoint and consult the `REST-API` documentation for the required parameters
+  # Interchange the endpoint and consult the `REST-API` documentation for the required `input`. `input` is the POST parameters which are required or optional.
 */
-
 	endpoint := "public/trending-news-data"
+	input := make(map[string]interface{})
+	input["date"] = "2020-07-04"
 
-	payload := make(map[string]interface{})
-	payload["date"] = '2020-07-04'
-
-	result, err := obj.Send(endpoint, payload, map[string]interface{}{})
+	result, err := obj.Send(endpoint, input, map[string]interface{}{})
 	if err != nil {
 		fmt.Println(err)
 	}
