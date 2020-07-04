@@ -7,6 +7,7 @@
 - [Online Demo](#online-demo)
 - [Authentication](#authentication)
 - [Base URL](#base-url)
+- [PHP SDK](#php-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
@@ -109,6 +110,9 @@ You do not need to `authenticate` with any API credentials, but `ratelimits` do 
 
 ## Base URL
 The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
+
+## PHP SDK
+We have provided a [PHP SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/php-sdk), which should enable you to get to work. In the near future we publish `golang`, `java`, `python` and `ruby`.
 
 ## General Information
 * The API is available to the public, rate limits and fair use rules apply.
