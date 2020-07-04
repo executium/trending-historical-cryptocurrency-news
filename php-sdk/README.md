@@ -54,7 +54,7 @@ foreach($result['data'] as $value)
 
 Which will give you an output like
 
-```php
+```
 
 Array
 (
