@@ -16,10 +16,10 @@ $obj = new ExecutiumTrendingNews();
 
 # Parameters required
 $payload=array();
-$payload['keyword_contains']='bitcoin';
+$input['keyword_contains']='bitcoin';
 
 # Send Request
-$result = $obj->trending_news_watchlist($payload);
+$result = $obj->trending_news_watchlist($input);
 
 # Result
 echo '<pre>';
