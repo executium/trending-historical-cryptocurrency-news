@@ -23,21 +23,21 @@ $offset=86400;
 $date=date("Y-m-d",$timestamp-$offset);
 ```
 
-Include the parameters for filtering, the `date` parameter is required, without it, the request will fail. 
+Include the parameters for filtering, the `date` parameter is required, without it, the request will fail. These are _POST
 ```php
-#Parameters required
-$payload=array();
-$payload['date']=$date;
-$payload['keyword_contains']='';
-$payload['title_contains']='';
-$payload['brief_contains']='';
-$payload['exclude_keywords']='';
+# Parameters required (_POST)
+$input=array();
+$input['date']=$date;
+$input['keyword_contains']='';
+$input['title_contains']='';
+$input['brief_contains']='';
+$input['exclude_keywords']='';
 ```
 
 Send the Request
 
 ```php
-$result = $obj->trending_news_data($payload);
+$result = $obj->trending_news_data($input);
 ```
 
 Thats it! You can then manipulate the output of the `$result`, for example you can:
