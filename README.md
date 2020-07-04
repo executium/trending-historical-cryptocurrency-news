@@ -495,31 +495,35 @@ None
 **Successful Response Payload:**
 ```javascript
 
- "data": 
- {
-      "keywords_monitored": 5235,
-      "total_articles_found": 13100,
-      "total_keywords_matched": 11372,
-      "history": [
-        {
-          "added_in_last_hour": 570
-        },
-        {
-          "last_24_hours": 454
-        },
-        {
-          "last_48_hours": 725
-        },
-        {
-          "last_7_days": 2265
-        },
-        {
-          "last_30_days": 4927
-        }
+"data":
+{
+      "keywords_monitored":5270,
+      "total_articles_found":80886,
+      "total_keywords_matched":148219,
+      "history":[
+         {
+            "added_in_last_hour":14
+         },
+         {
+            "last_1_hour":0
+         },
+         {
+            "last_24_hours":438
+         },
+         {
+            "last_48_hours":1228
+         },
+         {
+            "last_7_days":4094
+         },
+         {
+            "last_30_days":9133
+         }
       ],
-      "sources": 1406,
-      "last_update": 1593408099
-	}
+      "sources":4835,
+      "last_update":1593852902
+},
+
 
 ```
 
