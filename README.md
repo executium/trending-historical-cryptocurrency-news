@@ -171,6 +171,8 @@ The data provided is in a format which provides *enough* depth in the `non-subsc
 ## Trending News Data
 Trending news data is display on a day per day basis. The date format must be YYYY-MM-DD. You have the additional option to utilize `keyword_contains` which will enable you to pull back all data on keywords which contain your string. This ability is also extended with `title_contains` and `brief_contains`. For multiple keywords to search add a coma (,) onto the string and the system will search for multiple, up to a maximum of 10 per contains.
 
+You can exclude keywords by using `exclude_keywords` to bypass keywords you do not want returned. This should be a coma seperated list.
+
 ```
 POST /api/v2/public/trending-news-data
 ```
@@ -182,6 +184,7 @@ date | 9 | YES |  | Format YYYY-MM-DD
 keyword_contains |  | NO |  | Search for a particular keyword in the `keyword`
 title_contains |  | NO |  | Search for a particular keyword in the `title`
 brief_contains |  | NO |  | Search for a particular keyword in the `brief`
+exclude_keywords |  | NO |  | Coma seperated list of keywords to exclude
 
 ```javascript
 
