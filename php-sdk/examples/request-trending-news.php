@@ -12,7 +12,6 @@
 # Include the executium class
 include '../src/Executium.trendingnews.Class.php';
 
-# Declare your key and secret
 $obj = new ExecutiumTrendingNews();
 
 # Date Offset
