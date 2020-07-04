@@ -525,7 +525,7 @@ None
 
 
 ## Trending News Add Keyword
-
+Only available for subscribers.
 
 ```
 POST /api/v2/public/trending-news-add-keyword
@@ -547,6 +547,7 @@ name | 1 | YES |  | The `keyword` you want to track.
 
 
 ## List your own keywords
+Only available for subscribers.
 
 
 ```
@@ -570,7 +571,7 @@ page |  | NO | 1 |
 
 
 ## Trending News Remove Keyword
-
+Only available for subscribers.
 
 ```
 POST /api/v2/public/trending-news-remove-keyword
