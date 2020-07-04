@@ -1,4 +1,4 @@
-# Go-lang Scripts for Cryptocurrency Trending News
+# Golang Scripts for Cryptocurrency Trending News
 
 1. Navigate to `trending-historical-cryptocurrency-news/golang-sdk/examples` folder
 2. Run `go install`
