@@ -15,7 +15,7 @@ include '../src/Executium.trendingnews.Class.php';
 $obj = new ExecutiumTrendingNews();
 
 # Parameters required
-$payload=array();
+$input=array();
 $input['keyword_contains']='bitcoin';
 
 # Send Request
