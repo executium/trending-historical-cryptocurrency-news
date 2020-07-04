@@ -95,7 +95,7 @@ The endpoint `public/trending-news-watchlist` provides the keywords which we cur
 You can jump through historical news by using the `date` parameter on the `public/trending-news-data`.
 
 ## Online Demo
-We have setup a [demo site](https://trendingnews.executium.com/examples/) at [http://trendingnews.executium.com/examples/](http://trendingnews.executium.com/examples/) for you to test out the potential of the cryptocurrency trending and historical news API without having to get your hands dirty.
+We have setup a [demo site](https://trendingnews.executium.com/examples/) at [https://trendingnews.executium.com/examples/](http://trendingnews.executium.com/examples/) for you to test out the potential of the cryptocurrency trending and historical news API without having to get your hands dirty.
 
 The example concentrates on the `price_impact_3600s` array. It compiles data for all offered pairs on a date range basis.
 
