@@ -26,6 +26,7 @@ $payload['date']=$date;
 $payload['keyword_contains']='';
 $payload['title_contains']='';
 $payload['brief_contains']='';
+$payload['exclude_keywords']='';
 
 # Send Request
 $result = $obj->trending_news_data($payload);
