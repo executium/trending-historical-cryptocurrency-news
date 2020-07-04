@@ -15,10 +15,10 @@ include '../src/Executium.trendingnews.Class.php';
 $obj = new ExecutiumTrendingNews();
 
 # Parameters required
-$payload=array();
+$input=array();
 
 # Send Request
-$result = $obj->trending_news_statistics($payload);
+$result = $obj->trending_news_statistics($input);
 
 # Result
 echo '<pre>';
