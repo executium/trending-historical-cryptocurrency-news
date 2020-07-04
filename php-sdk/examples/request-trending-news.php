@@ -20,15 +20,15 @@ $offset=86400;
 $date=date("Y-m-d",$timestamp-$offset);
 
 # Parameters required
-$payload=array();
-$payload['date']=$date;
-$payload['keyword_contains']='';
-$payload['title_contains']='';
-$payload['brief_contains']='';
-$payload['exclude_keywords']='';
+$input=array();
+$input['date']=$date;
+$input['keyword_contains']='';
+$input['title_contains']='';
+$input['brief_contains']='';
+$input['exclude_keywords']='';
 
 # Send Request
-$result = $obj->trending_news_data($payload);
+$result = $obj->trending_news_data($input);
 
 # Result
 echo '<pre>';
