@@ -483,7 +483,9 @@ source_contains |  | NO |  | Search for a particular keyword in the `source`
 ```
 
 ## Trending News Statistics
-Statistics relating to the trending news catalog. The parameter `total_keywords_matched` can be much higher than total_articles_found as 100s of keywords can be matched to a single article.
+Statistics relating to the trending news catalog. The parameter `total_keywords_matched` can be much higher than total_articles_found as 100s of keywords can be matched to a single article. 
+
+The `pending_marketdata_inclusion` is an indicator of how many articles are still yet to have market data assigned to them. There will be an arrears when it comes to process this data, as we must wait an hour for the `price_impact_3600s` to trigger. 
 
 ```
 GET /api/v2/public/trending-news-statistics
@@ -500,6 +502,7 @@ None
       "keywords_monitored":5270,
       "total_articles_found":80886,
       "total_keywords_matched":148219,
+      "pending_marketdata_inclusion":6311,
       "history":[
          {
             "added_in_last_hour":14
