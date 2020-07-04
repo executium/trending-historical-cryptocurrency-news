@@ -9,7 +9,7 @@
 - [Base URL](#base-url)
 - Development Kits
 	- [PHP SDK](#php-sdk)
-	- [#golang-sdk](#golang-sdk)
+	- [Golang SDK](#golang-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
