@@ -109,6 +109,12 @@
 			return $this->post($input,array());
 		}
 
+		public function trending_news_source_impact($input)
+		{
+			$this->set_path('public/trending-news-source-impact');
+			return $this->post($input,array());
+		}
+
 		public function trending_news_watchlist($input)
 		{
 			$this->set_path('public/trending-news-watchlist');
@@ -124,4 +130,3 @@
 
 	}
 
-?>
