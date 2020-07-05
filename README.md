@@ -390,7 +390,7 @@ POST /api/v2/public/trending-news-source-impact
 **Parameters:**
 Name | MinLength | Required | Default | Description
 ------------ | ------------ | ------------ | ------------ | ------------
-source_contains |  | NO |  | Search for a particular keyword in the `source`
+source_contains | 1 | YES |  | Provide the exact publication you are looking for, for example, if you was looking for the coin telegraph, you would enter the coin telegraph. Consult the source list for more information.
 
 
 **Successful Response Payload:**
