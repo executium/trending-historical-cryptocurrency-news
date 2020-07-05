@@ -10,6 +10,7 @@
 - Development Kits
 	- [PHP SDK](#php-sdk)
 	- [Golang SDK](#golang-sdk)
+	- [Python SDK](#python-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
@@ -121,6 +122,10 @@ We have provided a [PHP SDK for trending news](https://github.com/executium/tren
 
 ### Golang SDK
 The [Golang SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/golang-sdk) is available for pull. Please review the readme.md available there for more information.
+
+### Python SDK
+The [Python SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/python-sdk) is available for use. Please review the readme.md available there for more information on how to utilize the Python files.
+
 
 ## General Information
 * The API is available to the public, rate limits and fair use rules apply.
