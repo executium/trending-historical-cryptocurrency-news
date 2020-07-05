@@ -115,7 +115,7 @@ You do not need to `authenticate` with any API credentials, but `ratelimits` do 
 The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
 
 ## Development Kits
-In the near future we will be publishing  `java`, `python` and `ruby` to add to the `php` and `golang` SDKs currently available
+In the near future we will be publishing  `java`, and `ruby` to add to the `php`, `python` and `golang` SDKs currently available
 
 ### PHP SDK
 We have provided a [PHP SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/php-sdk). Please review the readme.md at that location for more information.
