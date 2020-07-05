@@ -11,6 +11,8 @@
 	- [PHP SDK](#php-sdk)
 	- [Golang SDK](#golang-sdk)
 	- [Python SDK](#python-sdk)
+	- [Java SDK](#java-sdk)
+	- [Node SDK](#node-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
