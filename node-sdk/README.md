@@ -90,7 +90,7 @@ client.post('public/trending-news-data', { date: '2020-07-06' }, {})
   ... 684 more items
 ```
 
-## Command line with `express`
+## Command line with `examples/cli/`
 
 ```
 nodejs ./index.js request public/trending-news-sources '{}' --apiKey=... --apiSecret=...   
