@@ -117,7 +117,7 @@ You do not need to `authenticate` with any API credentials, but `ratelimits` do 
 The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
 
 ## Development Kits
-In the near future we will be publishing  `java`, and `ruby` to add to the `php`, `python` and `golang` SDKs currently available
+We currently have `5` SDKs available for the trending cryptocurrency news endponts, in the shape of  `java`, `node`, `php`, `python` and `golang` SDKs.
 
 ### PHP SDK
 We have provided a [PHP SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/php-sdk). Please review the readme.md at that location for more information.
@@ -127,6 +127,12 @@ The [Golang SDK for trending news](https://github.com/executium/trending-histori
 
 ### Python SDK
 The [Python SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/python-sdk) is available for use. Please review the readme.md available there for more information on how to utilize the Python files.
+
+### Java SDK
+The [Java SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/java-sdk) is available for use. Please review the README.md available there for more information on how to configure the JAVA files.
+
+### Node SDK
+The [Node SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/node-sdk) is available for use. Please review the README.md as there are several forms available for the `node` installation. Both client and express available.
 
 
 ## General Information
