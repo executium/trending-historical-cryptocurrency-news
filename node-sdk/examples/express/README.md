@@ -22,4 +22,3 @@ Navigate to this [link](http://localhost:3000/?path=/public/trending-news-data&i
 ```
 http://localhost:3000/?path=/public/trending-news-data&input={%20%22date%22:%222020-07-02%22}
 ```
-
