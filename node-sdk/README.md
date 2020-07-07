@@ -1,6 +1,20 @@
 ## Node SDK for Cryptocurrency Trending News
 This is the Node JS SDK for development of the trending news script. Too use the free version of the application you do not need an API `key` or `secret`. 
 
+## Install
+
+```javascript
+npm init
+```
+
+```javascript
+npm i yargs --save
+```
+
+```javascript
+npm i express --save
+```
+
 ### Simple example:
 ```javascript
 const ApiAccess = require('./ApiAccess');
