@@ -1,7 +1,7 @@
 ## Node SDK for Cryptocurrency Trending News
 This is the Node JS SDK for development of the trending news script. Too use the free version of the application you do not need an API `key` or `secret`. 
 
-### Simple example :
+### Simple example:
 ```javascript
 const ApiAccess = require('./ApiAccess');
 
@@ -90,6 +90,31 @@ client.post('public/trending-news-data', { date: '2020-07-06' }, {})
   ... 684 more items
 ```
 
+## Command line with `express`
+
+```
+nodejs ./index.js request public/trending-news-sources '{}' --apiKey=... --apiSecret=...   
+```
+**Example of output**
+```javascript
+
+{
+  success: true,
+  returned: {
+    data: [
+      '',
+      '"metrology news"',
+      '#KhabarLive Hyderabad',
+      '1010WINS',
+      '1057news.com',
+      '107.180.56.147',
+      '10News',
+      '10News San Diego',
+      ...
+  }
+}
+      
+```
 
 ### More involved example:
 ```javascript
