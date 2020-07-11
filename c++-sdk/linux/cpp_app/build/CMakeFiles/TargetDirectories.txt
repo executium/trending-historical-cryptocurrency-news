@@ -1,0 +1,3 @@
+/home/mahmoudselmy/Development/C++/php2cpp/cpp_app/build/CMakeFiles/rebuild_cache.dir
+/home/mahmoudselmy/Development/C++/php2cpp/cpp_app/build/CMakeFiles/CppCurl.dir
+/home/mahmoudselmy/Development/C++/php2cpp/cpp_app/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/CppCurl.dir/src/main.cpp.o CMakeFiles/CppCurl.dir/src/ApiAccess.cpp.o  -o CppCurl  -lcurl -lssl -lcrypto 
