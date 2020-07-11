@@ -24,5 +24,4 @@
 - 3) Change "Whole Program Optimization" = > "Use Link Time Code Generation"
 ![](./Screenshot_2.png)
 - 4) Set Solution as startup project
-![](./Screenshot_4.png)
-- 4) Run in Release x64 mode
+- 5) Run in Release x64 mode
