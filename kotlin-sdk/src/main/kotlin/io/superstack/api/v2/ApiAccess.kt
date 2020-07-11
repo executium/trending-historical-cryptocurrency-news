@@ -124,10 +124,11 @@ class ApiAccess(val apiKey: String, val apiSecret: String) {
         }
     }
 
-    fun send(path: String, input: Map<String, Boolean>, payload: MutableMap<String, Any>): JSONObject? {
+    fun send(path: String, input: Map<String, Any>, payload: MutableMap<String, Any>): JSONObject? {
         this.path = path
         return post(input, payload)
     }
+   
 }
 
 fun String.replaceCharacters() =
