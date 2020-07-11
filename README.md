@@ -14,7 +14,7 @@
 	- [Java SDK](#java-sdk)
 	- [Node SDK](#node-sdk)
 	- [C# SDK](#c-sdk)
-	- [C++ SDK](#c%2B%2B-sdk)
+	- [C++ SDK](#c--sdk)
 	- [Kotlin SDK](#kotlin-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
