@@ -1,0 +1,142 @@
+<!---
+
+    /*
+    **
+    ** Test script to output results using jQuery 3.5.1 and setInterval()
+    ** Change `url` and `intervalMilliseconds`
+    ** Note: If you are pulling `public/trending-news-data`, this will cause a delay in your browser rendering due to the amount of data
+    **
+    **/
+
+--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>body{font-family: Arial;}</style>
+    <script>url='https://trendingnews.executium.com/api/v2/public/trending-news-statistics'; intervalMilliseconds=10000;</script>
+</head>
+<body>
+
+<h1></h1>
+<pre style="white-space: pre-wrap;" id="output"></pre>
+<script>
+
+setInterval(function()
+{
+    requestEndpoint(url);
+
+},intervalMilliseconds );
+
+function requestEndpoint(url)
+{
+    $.ajax
+    ({
+        type:"POST",
+        url:url,
+        data:'expand=true',
+        cache:false,
+        crossDomain: true,
+        xhrFields: { withCredentials: true},
+        timeout:6000,
+        error: function(data)
+        {
+            console.log('Error',data);
+        },
+        scriptCharset:"script",dataType:"",success:function(data)
+        {
+            console.log('Success',data);
+
+            $('#output').empty().html('<strong>'+new Date()+"</strong>\n<strong>URL: "+url+"</strong>\n<strong>Interval: "+intervalMilliseconds+"ms</strong>\n\n"+print_r(data));
+        }
+
+    });
+}
+
+requestEndpoint(url);
+
+
+function print_r(json)
+{
+    if (typeof json != 'string') {
+         json = JSON.stringify(json, undefined, 2);
+    }
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
+}
+
+
+</script>
+
+<!---
+
+Output for the endpoint in this test will be something like follows:
+
+Sat Jul 11 2020 13:40:33 GMT+0700 (Indochina Time)
+URL: https://trendingnews.executium.com/api/v2/public/trending-news-statistics
+Interval: 10000ms
+
+{
+  "data": {
+    "keywords_monitored": 5269,
+    "total_articles_found": 143184,
+    "total_keywords_matched": 258300,
+    "pending_marketdata_inclusion": 7,
+    "history": [
+      {
+        "added_in_last_hour": 224
+      },
+      {
+        "last_1_hour": 0
+      },
+      {
+        "last_24_hours": 604
+      },
+      {
+        "last_48_hours": 1595
+      },
+      {
+        "last_7_days": 5316
+      },
+      {
+        "last_30_days": 15735
+      }
+    ],
+    "sources": 7159,
+    "last_update": 1594449626
+  },
+  "meta": {
+    "api_version": 2,
+    "reqid": "38670G46957T1594449633",
+    "system_version": "2.0.5",
+    "endpoint": "public/trending-news-statistics",
+    "status": 200,
+    "timezone": "UTC",
+    "request": "api/v2/public/trending-news-statistics",
+    "auth_required": false,
+    "ms": 1594449633850,
+    "time": 1594449633,
+    "process_time": 0.009033,
+    "process_full": 0.013527,
+    "requester": "<YOUR-IP>"
+  }
+}
+
+--->
+</body>
+</html>
