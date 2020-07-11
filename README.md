@@ -13,6 +13,9 @@
 	- [Python SDK](#python-sdk)
 	- [Java SDK](#java-sdk)
 	- [Node SDK](#node-sdk)
+	- [C# SDK](#c-sdk)
+	- [C++ SDK](#c%2B%2B-sdk)
+	- [Kotlin SDK](#kotlin-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
@@ -117,7 +120,7 @@ You do not need to `authenticate` with any API credentials, but `ratelimits` do 
 The base URL for using the executium `trending-historical-cryptocurrency-news` is `https://trendingnews.executium.com`
 
 ## Development Kits
-We currently have `5` SDKs available for the trending cryptocurrency news endponts, in the shape of  `java`, `node`, `php`, `python` and `golang` SDKs.
+We currently have `8` SDKs available for the trending cryptocurrency news endponts, in the shape of  `java`, `node`, `php`, `python`, `c++`, `c#`, `kotlin` and `golang` SDKs.
 
 ### PHP SDK
 We have provided a [PHP SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/php-sdk). Please review the readme.md at that location for more information.
@@ -133,6 +136,15 @@ The [Java SDK for crypto trending news](https://github.com/executium/trending-hi
 
 ### Node SDK
 The [Node SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/node-sdk) is available for use. Please review the README.md as there are several forms available for the `node` installation. Both client and express available.
+
+### C++  SDK
+The [C++ SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/c%2B%2B-sdk) is available for use. Please review the README.md as there are several options available for the `c++` installation with both `linux` and `windows` methods.
+
+### C# SDK
+The [C# SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/c%23-sdk) is available for use. Please review the README.md available there for more information on how to configure the C# files.
+
+### Kotlin SDK
+The [Kotlin SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/kotlin-sdk) is available for use. Please review the README.md available there for more information on how to configure the files.
 
 
 ## General Information
