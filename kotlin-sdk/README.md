@@ -78,9 +78,7 @@ A fictional configuration to show how to things change things:
 api.apply {
     upgrade the version
     version = 5;
-    // n
     domain = "https://trendingnews.executium.com"
-    // but still use the old user agent
     userAgent = "API v2 (Kotlin)"
     path = ""
     url = ""
