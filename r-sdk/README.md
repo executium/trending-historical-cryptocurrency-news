@@ -7,23 +7,26 @@ The `tests/` folder provides `valid` and `invalid` inputs so that you can experi
 ```
 sudo apt-get install r-base r-base-dev
 ```
-2) 
+2) Installing dependencies
 ```
-Rscript /path/to/script.R
+Rscript -e "install.packages(c('R6', 'purrr', 'RCurl', 'jsonlite', 'digest', 'httr', 'curl'))"
+Rscript -e 'install.packages("remotes")'
+```
+Optional, for test purposes
+```
+Rscript -e 'install.packages("testthat")'
+R CMD INSTALL --no-multiarch --with-keep.source ./
+```
+Then run:
+```
+Rscript /path/to/tests/testthat.R
 ```
 Optional, but not required for access to the free tier of trending news is the config files
 ```r
 key = "your key here"
 secret = "your secret here"
 ```
-3) You need to install R packages, as follows:
-```
-Rscript -e 'install.packages("remotes")'
-```
-Optional, for test purposes
-```
-Rscript -e 'install.packages("testthat")'
-```
+
 
 ## Example R script
 
