@@ -30,6 +30,7 @@
 	- [List your own keywords](#list-your-own-keywords) (public/trending-news-list-my-keywords)
 	- [Trending News Remove Keyword](#trending-news-remove-keyword) (public/trending-news-remove-keyword)
 - [Requesting Keywords](#requesting-keywords)
+- [Projects based on the API](#projects-based-on-the-api)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -644,3 +645,10 @@ keywordid |  | YES |  | The `keyword_id` you wish to remove. You can get this in
 
 ## Requesting Keywords
 If you wish to track your own list of keywords, we have subscription models for that.
+
+## Projects based on the API
+As follows are some projects which caught our attention that make use of the `trending news API` 
+
+- [Crypto news analysis](https://github.com/cliffordgates/crypto-news-analaysis)
+- [Top 10 Publications App(https://github.com/songot/tenpubs)
+
