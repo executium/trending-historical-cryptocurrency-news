@@ -650,5 +650,8 @@ If you wish to track your own list of keywords, we have subscription models for 
 As follows are some projects which caught our attention that make use of the `trending news API` 
 
 - [Crypto news analysis](https://github.com/cliffordgates/crypto-news-analaysis)
-- [Top 10 Publications App(https://github.com/songot/tenpubs)
+- [Top 10 Publications App](https://github.com/songot/tenpubs)
+
+## Contributing
+If you have an interesting usage of our API `endpoints` for trending news ([or any of our projects](https://github.com/executium)) then feel free to contact us so we can feature you int his readme.
 
