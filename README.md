@@ -17,6 +17,8 @@
 	- [C++ SDK](#c--sdk)
 	- [Kotlin SDK](#kotlin-sdk)
 	- [R SDK](#r-sdk)
+	- [Ruby SDK](#ruby-sdk)
+	- [SWIFT SDK](#swift-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
@@ -150,6 +152,13 @@ The [Kotlin SDK for crypto trending news](https://github.com/executium/trending-
 
 ### R Programming Language SDK
 The [R SDK for cryptocurrency trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/r-sdk) is available for use. Please review the README.md available there for more information on how to configure the R files for use.
+
+### Ruby Programming Language SDK
+The [Ruby SDK for cryptocurrency trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/ruby-sdk) is available for use.
+
+### Swift Programming Language SDK
+The [SWIFT SDK for cryptocurrency trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/swift-sdk) is available for use.
+
 
 
 ## General Information
