@@ -1,4 +1,5 @@
 # Executium Trending News - SWIFT
+All files can be adapted for any iOS application where required.
 
 ## Requirements
 
