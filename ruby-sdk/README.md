@@ -1,4 +1,4 @@
-# Executium Trending News - Ruby pn Rails SDK
+# Executium Trending News - Ruby on Rails SDK
  
 - class.rb
 - config.rb
