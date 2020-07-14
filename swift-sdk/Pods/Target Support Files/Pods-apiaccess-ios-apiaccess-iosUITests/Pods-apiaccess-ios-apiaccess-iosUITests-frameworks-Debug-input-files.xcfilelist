@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-apiaccess-ios-apiaccess-iosUITests/Pods-apiaccess-ios-apiaccess-iosUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Base64/Base64.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/JWT/JWT.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

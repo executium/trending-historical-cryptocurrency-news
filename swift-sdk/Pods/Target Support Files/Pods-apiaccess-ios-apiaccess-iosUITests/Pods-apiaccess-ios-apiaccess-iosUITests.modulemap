@@ -1,0 +1,6 @@
+framework module Pods_apiaccess_ios_apiaccess_iosUITests {
+  umbrella header "Pods-apiaccess-ios-apiaccess-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
