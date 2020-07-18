@@ -15,6 +15,7 @@
 	- [Node SDK](#node-sdk)
 	- [C# SDK](#c-sdk)
 	- [C++ SDK](#c--sdk)
+	- [C SDK](#c-sdk)
 	- [Kotlin SDK](#kotlin-sdk)
 	- [R SDK](#r-sdk)
 	- [Ruby SDK](#ruby-sdk)
@@ -146,6 +147,9 @@ The [C++ SDK for crypto trending news](https://github.com/executium/trending-his
 
 ### C# SDK
 The [C# SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/c%23-sdk) is available for use. Please review the README.md available there for more information on how to configure the C# files.
+
+### C SDK
+The [C SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/c-sdk) is available for use. Please review the README.md.
 
 ### Kotlin SDK
 The [Kotlin SDK for crypto trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/kotlin-sdk) is available for use. Please review the README.md available there for more information on how to configure the files.
