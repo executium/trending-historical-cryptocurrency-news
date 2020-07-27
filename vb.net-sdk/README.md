@@ -12,7 +12,7 @@
 3. How to run program without Visual Studio
 	- Go to Project Root Directory
 	- Explore bin\debug direcoty.
-	- Double click or run as Administrator "PORT-VBNET.exe" file.
+	- Double click or run as Administrator "API-VBNET.exe" file.
 	- You will get result on console screen. 
 	
 4. Attched Source Code
