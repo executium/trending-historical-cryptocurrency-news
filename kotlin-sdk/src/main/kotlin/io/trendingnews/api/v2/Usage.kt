@@ -3,12 +3,11 @@ package io.trendingnews.api.v2
 fun main() {
     // in the JVM / Android world api keys and secrets can come from many places, for example injected via an IoC
     // container, from properties files, from XML files, from JSON files, from shared preferences, from environment
-    // variables, container orchestration.... so it is best to just simply show how to use them instead
+    // variables, container orchestration ... so it is best to just simply show how to use them instead
     val api = ApiAccess(
         "",
         ""
     )
-
     val endpoint = "public/trending-news-data"
     val input = mapOf("date" to "2020-07-05")
     val result = api.send(endpoint, input, mutableMapOf())
