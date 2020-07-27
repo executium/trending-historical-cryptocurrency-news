@@ -1,4 +1,5 @@
 # Executium Trending News - VB.net SDK
+In this folder you will find the source code which will assist with regards to you using VB.net to pull down the trending news `endpoints`.
 
 1. Software Requirement
 	- This project was build in Microsoft Visual Studio 2010 IDE Kit.
