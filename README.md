@@ -21,6 +21,7 @@
 	- [R SDK](#r-sdk)
 	- [Ruby SDK](#ruby-sdk)
 	- [SWIFT SDK](#swift-sdk)
+	- [VB.net SDK](#vbnet-sdk)
 - [General Information](#general-information)
 - [HTTP Return Codes](#http-return-codes)
 - [Article Price Impact](#article-price-impact)
@@ -167,6 +168,8 @@ The [Ruby SDK for cryptocurrency trending news](https://github.com/executium/tre
 ### Swift Programming Language SDK
 The [SWIFT SDK for cryptocurrency trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/swift-sdk) is available for use.
 
+### VB.net SDK
+The [VB.net SDK for trending news](https://github.com/executium/trending-historical-cryptocurrency-news/tree/master/vb.net-sdk) is available for use.
 
 
 ## General Information
