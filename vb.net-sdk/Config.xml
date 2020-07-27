@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <key></key>
+  <secret></secret>
+  <domain>https://trendingnews.executium.com</domain>
+  <endpoint>public/trending-news-data</endpoint>
+  <version>2</version>
+  <utc_server_time_difference_sec>-240</utc_server_time_difference_sec>
+</Settings>
